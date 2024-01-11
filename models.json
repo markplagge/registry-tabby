@@ -104,5 +104,26 @@
       "https://huggingface.co/TheBloke/deepseek-coder-6.7B-base-GGUF/resolve/main/deepseek-coder-6.7b-base.Q8_0.gguf"
     ],
     "sha256": "a2f82242ac5e465037cbf1ed754f04f0be044ee196e1589905f9e4dcd0e6559d"
+  },
+  {
+    "name": "DeepseekCoder-6.7BQ",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "provider_url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base",
+    "urls": [
+      "https://huggingface.co/TheBloke/deepseek-coder-6.7B-base-GGUF/resolve/main/deepseek-coder-6.7b-base.Q4_K_M.gguf?download=true"
+    ],
+    "sha256": "28cef03e1b2d2478dafdb09f1520417cab55efcd3d1cc22bb1950c90bcd8804b"
+  },
+  {
+  "name": "mistral-7b-code",
+   "prompt_template": "<|im_start|>system {system_message}<|im_end|><|im_start|>user{prompt}<|im_end|><|im_start|>assistant",
+  "provider_url": "https://huggingface.co/Nondzu/Mistral-7B-Instruct-v0.2-code-ft",
+  "urls": [
+    "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-code-ft-GGUF/blob/main/mistral-7b-instruct-v0.2-code-ft.Q4_K_M.gguf"
+  ],
+    "sha256": "483333dec073dac45f63ff4d496c09d6857940808375a6559eb3d235ce7bef71"
+    
   }
 ]
