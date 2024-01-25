@@ -147,5 +147,17 @@
       "https://huggingface.co/TheBloke/WizardCoder-Python-7B-V1.0-GGUF/resolve/main/wizardcoder-python-7b-v1.0.Q5_K_S.gguf"
     ],
     "sha256":"fe57fba741643045493b67f8be52476343367849b13bd8a774e6ca2fdf6b9de0" 
-  },  
+  },
+  {
+    "name": "PhindCodeLlama-34Bv2",
+    "provider_url": "https://huggingface.co/Phind/Phind-CodeLlama-34B-v2",
+    "license_name": "Llama 2",
+    "license_url": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
+    "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
+    "chat_template" : "### System Prompt\nYou are an intelligent programming assistant. Below is an instruction that describes a task. Write a response that appropriately completes the request.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### User Message:\n' + message['content'] + '\n### Assistant:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://huggingface.co/TTheBloke/Phind-CodeLlama-34B-v2-GGUF/resolve/main/phind-codellama-34b-v2.Q4_K_M.gguf"
+    ],
+    "sha256": "196765aa42bc5a507dffb7d60d5a9308001378bde99a0b34c9843c740b8e5741"
+  }
 ]
